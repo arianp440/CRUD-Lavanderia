@@ -1,21 +1,40 @@
 package br.unisul.aula.trabalho;
 
-public class Roupa {
+abstract class Roupa {
 	private double valorPeca;
+	public double preco;
 	
-
-	public void excluirPeca() {
-
+	
+	public Roupa() {
+		super();
+		
 	}
 
-	public void alterarPeca() {
 
-	}
-
-	public double calculaPrecoPagar() {
-		int valor;
+	public double getValorPeca() {
 		return valorPeca;
-
 	}
+
+
+
+	public void setValorPeca(double valorPeca) {
+		this.valorPeca = valorPeca;
+	}
+
+
+
+	public double getPreco() {
+		return preco;
+	}
+
+
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+
+
+	public abstract double calcularValor();
 
 }
