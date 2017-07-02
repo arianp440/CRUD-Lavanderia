@@ -2,14 +2,12 @@ package br.unisul.aula.trabalho;
 
 import java.util.ArrayList;
 
-public class Cliente extends Venda {
+public class Cliente {
 
 	private String nome;
 	private String cpf;
 	private int telefone;
-	private double valorPagar;
-	private ArrayList listaClientes;
-	private ArrayList listaHistoricoCliente;
+	private ArrayList<Servico> historicoCliente;
 
 	public String getNome() {
 		return nome;
@@ -27,28 +25,12 @@ public class Cliente extends Venda {
 		this.cpf = cpf;
 	}
 
-	public double getValorPagar() {
-		return valorPagar;
+	public ArrayList<Servico> getListaHistoricoCliente() {
+		return historicoCliente;
 	}
 
-	public void setValorPagar(double valorPagar) {
-		this.valorPagar = valorPagar;
-	}
-
-	public ArrayList getListaHistoricoCliente() {
-		return listaHistoricoCliente;
-	}
-
-	public void setListaHistorico(ArrayList listaHistoricoCliente) {
-		this.listaHistoricoCliente = listaHistoricoCliente;
-	}
-
-	public ArrayList getListaClientes() {
-		return listaClientes;
-	}
-
-	public void setListaCliente(ArrayList listaClientes) {
-		this.listaClientes = listaClientes;
+	public void setListaHistorico(ArrayList<Servico> listaHistoricoCliente) {
+		this.historicoCliente = listaHistoricoCliente;
 	}
 
 	public int getTelefone() {
